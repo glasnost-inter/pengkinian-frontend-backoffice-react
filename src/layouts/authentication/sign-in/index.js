@@ -19,7 +19,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 // @mui material components
+/*
 import Switch from "@mui/material/Switch";
+*/
 
 // Soft UI Dashboard React components
 import SuiBox from "components/SuiBox";
@@ -40,18 +42,18 @@ function SignIn() {
 
   return (
     <CoverLayout
-      title="Welcome back"
-      description="Enter your email and password to sign in"
+      title="Pengkinian Data"
+      description="Masukan Userid dan password untuk Login"
       image={curved9}
     >
       <SuiBox component="form" role="form">
         <SuiBox mb={2}>
           <SuiBox mb={1} ml={0.5}>
             <SuiTypography component="label" variant="caption" fontWeight="bold">
-              Email
+              Userid
             </SuiTypography>
           </SuiBox>
-          <SuiInput type="email" placeholder="Email" />
+          <SuiInput type="text" placeholder="Userid" />
         </SuiBox>
         <SuiBox mb={2}>
           <SuiBox mb={1} ml={0.5}>
@@ -62,24 +64,23 @@ function SignIn() {
           <SuiInput type="password" placeholder="Password" />
         </SuiBox>
         <SuiBox display="flex" alignItems="center">
-          <Switch checked={rememberMe} onChange={handleSetRememberMe} />
           <SuiTypography
             variant="button"
             fontWeight="regular"
             onClick={handleSetRememberMe}
             customClass="cursor-pointer user-select-none"
           >
-            &nbsp;&nbsp;Remember me
+            &nbsp;&nbsp;
           </SuiTypography>
         </SuiBox>
         <SuiBox mt={4} mb={1}>
           <SuiButton variant="gradient" buttonColor="info" fullWidth>
-            sign in
+            LOGIN
           </SuiButton>
         </SuiBox>
         <SuiBox mt={3} textAlign="center">
           <SuiTypography variant="button" textColor="text" fontWeight="regular">
-            Don&apos;t have an account?{" "}
+            &nbsp;{" "}
             <SuiTypography
               component={Link}
               to="/authentication/sign-up"
@@ -88,7 +89,7 @@ function SignIn() {
               fontWeight="medium"
               textGradient
             >
-              Sign up
+              &nbsp;
             </SuiTypography>
           </SuiTypography>
         </SuiBox>

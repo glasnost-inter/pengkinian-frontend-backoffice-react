@@ -58,6 +58,15 @@ import Cube from "examples/Icons/Cube";
 const routes = [
   {
     type: "collapse",
+    name: "Sign In",
+    key: "sign-in",
+    route: "/authentication/sign-in",
+    icon: <Document size="12px" />,
+    component: SignIn,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
     name: "Dashboard",
     key: "dashboard",
     route: "/dashboard",
@@ -109,15 +118,6 @@ const routes = [
     route: "/profile",
     icon: <CustomerSupport size="12px" />,
     component: Profile,
-    noCollapse: true,
-  },
-  {
-    type: "collapse",
-    name: "Sign In",
-    key: "sign-in",
-    route: "/authentication/sign-in",
-    icon: <Document size="12px" />,
-    component: SignIn,
     noCollapse: true,
   },
   {
