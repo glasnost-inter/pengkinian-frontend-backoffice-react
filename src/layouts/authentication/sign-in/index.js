@@ -74,7 +74,13 @@ function SignIn() {
           </SuiTypography>
         </SuiBox>
         <SuiBox mt={4} mb={1}>
-          <SuiButton variant="gradient" buttonColor="info" fullWidth>
+          <SuiButton
+            variant="gradient"
+            buttonColor="info"
+            component={Link}
+            to="/dashboard"
+            fullWidth
+          >
             LOGIN
           </SuiButton>
         </SuiBox>

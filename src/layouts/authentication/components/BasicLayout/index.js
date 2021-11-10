@@ -24,7 +24,9 @@ import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
 
 // Soft UI Dashboard React example components
+/*
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+*/
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
@@ -34,23 +36,15 @@ import Footer from "layouts/authentication/components/Footer";
 import styles from "layouts/authentication/components/BasicLayout/styles";
 
 // Soft UI Dashboard React page layout routes
+/*
 import routes from "routes";
+*/
 
 function BasicLayout({ title, description, image, children }) {
   const classes = styles({ image });
 
   return (
     <PageLayout>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/soft-ui-dashboard-material-ui",
-          label: "free download",
-        }}
-        transparent
-        light
-      />
       <SuiBox customClass={classes.basicLayout}>
         <Grid container spacing={3} justifyContent="center" className="text-center">
           <Grid item xs={10} lg={4}>
@@ -81,8 +75,8 @@ function BasicLayout({ title, description, image, children }) {
 
 // Setting default values for the props of BasicLayout
 BasicLayout.defaultProps = {
-  title: "",
-  description: "",
+  title: "xxx",
+  description: "yyyyy",
 };
 
 // Typechecking props for the BasicLayout
