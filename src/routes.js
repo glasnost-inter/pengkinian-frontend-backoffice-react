@@ -46,7 +46,9 @@ import SignIn from "layouts/authentication/sign-in";
 // import SignUp from "layouts/authentication/sign-up";
 
 import Approved from "layouts/approved";
-import WaitingApprove from "layouts/waitingapprove";
+import WaitingApprove from "layouts/waiting-approve";
+import WaitingApproveDetail from "layouts/waiting-approve-detail";
+import ApprovedDetail from "layouts/approved-detail";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
@@ -71,19 +73,37 @@ const routes = [
   {
     type: "collapse",
     name: "Waiting Approve",
-    key: "waitingapprove",
-    route: "/waitingapprove",
+    key: "waiting-approve",
+    route: "/waiting-approve",
     icon: <Office size="12px" />,
     component: WaitingApprove,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Approve",
-    key: "approve",
-    route: "/approve",
+    name: "Waiting Approve Detail",
+    key: "waiting-approve-detail",
+    route: "/waiting-approve-detail",
+    icon: <CreditCard size="12px" />,
+    component: WaitingApproveDetail,
+    noCollapse: true,
+  },  
+  {
+    type: "collapse",
+    name: "Approved",
+    key: "approved",
+    route: "/approved",
     icon: <CreditCard size="12px" />,
     component: Approved,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Approved Detail",
+    key: "approved-detail",
+    route: "/approved-detail",
+    icon: <CreditCard size="12px" />,
+    component: ApprovedDetail,
     noCollapse: true,
   },
   {

@@ -30,12 +30,13 @@ import Table from "examples/Table";
 import styles from "layouts/tables/styles";
 
 // Data
-import authorsTableData from "layouts/approved/data/authorsTableData";
+// import approvedData from "layouts/approved/data/approvedData";
+import approvedData from "examples/Table/data-dummy/approvedData";
 // import projectsTableData from "layouts/tables/data/projectsTableData";
 
 function Tables() {
   const classes = styles();
-  const { columns, rows } = authorsTableData;
+  const { columns, rows } = approvedData;
   // const { columns: prCols, rows: prRows } = projectsTableData;
 
   return (
@@ -45,8 +46,9 @@ function Tables() {
         <SuiBox mb={3}>
           <Card>
             <SuiBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <SuiTypography variant="h6">Authors table</SuiTypography>
+              <SuiTypography variant="h6">Approved</SuiTypography>
             </SuiBox>
+            
             <SuiBox customClass={classes.tables_table}>
               <Table columns={columns} rows={rows} />
             </SuiBox>

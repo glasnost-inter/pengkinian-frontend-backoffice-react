@@ -1,15 +1,16 @@
 /* eslint-disable react/prop-types */
 // Soft UI Dashboard React components
-import SuiBox from "components/SuiBox";
+// import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
-import SuiAvatar from "components/SuiAvatar";
-import SuiBadge from "components/SuiBadge";
+// import SuiAvatar from "components/SuiAvatar";
+// import SuiBadge from "components/SuiBadge";
 
 // Images
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
+// import team2 from "assets/images/team-2.jpg";
+// import team3 from "assets/images/team-3.jpg";
 // import team4 from "assets/images/team-4.jpg";
 
+/*
 function Author({ image, name, email }) {
   return (
     <SuiBox display="flex" alignItems="center" px={1} py={0.5}>
@@ -28,6 +29,7 @@ function Author({ image, name, email }) {
   );
 }
 
+
 function Function({ job, org }) {
   return (
     <SuiBox display="flex" flexDirection="column">
@@ -40,32 +42,49 @@ function Function({ job, org }) {
     </SuiBox>
   );
 }
+*/
 
 export default {
   columns: [
-    { name: "author", align: "left" },
-    { name: "function", align: "left" },
-    { name: "status", align: "center" },
-    { name: "employed", align: "center" },
+    { name: "no", align: "center" },
+    { name: "userid", align: "left" },
+    { name: "nopolis", align: "center" },
+    { name: "pemegangpolis", align: "left" },
+    { name: "jmlpengkinian", align: "right" },
     { name: "action", align: "center" },
   ],
 
   rows: [
     {
-      author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
-      function: <Function job="Manager" org="Organization" />,
-      status: (
-        <SuiBadge variant="gradient" badgeContent="online" color="success" size="extra-small" />
-      ),
-      employed: (
+      no: (
         <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
-          23/04/18
+          1
+        </SuiTypography>
+      ),
+      userid: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          3034-3049906
+        </SuiTypography>
+      ),
+      nopolis: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          0000003034
+        </SuiTypography>
+      ),
+      pemegangpolis: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          PT SURVEYOR INDONESIA
+        </SuiTypography>
+      ),
+      jmlpengkinian: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          5
         </SuiTypography>
       ),
       action: (
         <SuiTypography
           component="a"
-          href="#"
+          href="/waiting-approve-detail"
           variant="caption"
           textColor="secondary"
           fontWeight="medium"
@@ -75,20 +94,35 @@ export default {
       ),
     },
     {
-      author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
-      function: <Function job="Programator" org="Developer" />,
-      status: (
-        <SuiBadge variant="gradient" badgeContent="offline" color="secondary" size="extra-small" />
-      ),
-      employed: (
+      no: (
         <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
-          11/01/19
+          2
+        </SuiTypography>
+      ),
+      userid: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          129-918210
+        </SuiTypography>
+      ),
+      nopolis: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          0000000129
+        </SuiTypography>
+      ),
+      pemegangpolis: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          PT. KERETA API INDONESIA
+        </SuiTypography>
+      ),
+      jmlpengkinian: (
+        <SuiTypography variant="caption" textColor="secondary" fontWeight="medium">
+          10
         </SuiTypography>
       ),
       action: (
         <SuiTypography
           component="a"
-          href="#"
+          href="/waiting-approve-detail"
           variant="caption"
           textColor="secondary"
           fontWeight="medium"

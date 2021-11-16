@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+// import { useState } from "react";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -36,9 +36,9 @@ import CoverLayout from "layouts/authentication/components/CoverLayout";
 import curved9 from "assets/images/curved-images/curved-6.jpg";
 
 function SignIn() {
-  const [rememberMe, setRememberMe] = useState(true);
+  // const [rememberMe, setRememberMe] = useState(true);
 
-  const handleSetRememberMe = () => setRememberMe(!rememberMe);
+  // const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
     <CoverLayout
@@ -63,41 +63,15 @@ function SignIn() {
           </SuiBox>
           <SuiInput type="password" placeholder="Password" />
         </SuiBox>
-        <SuiBox display="flex" alignItems="center">
-          <SuiTypography
-            variant="button"
-            fontWeight="regular"
-            onClick={handleSetRememberMe}
-            customClass="cursor-pointer user-select-none"
-          >
-            &nbsp;&nbsp;
-          </SuiTypography>
-        </SuiBox>
         <SuiBox mt={4} mb={1}>
           <SuiButton
             variant="gradient"
             buttonColor="info"
             component={Link}
             to="/dashboard"
-            fullWidth
-          >
+            fullWidth>
             LOGIN
           </SuiButton>
-        </SuiBox>
-        <SuiBox mt={3} textAlign="center">
-          <SuiTypography variant="button" textColor="text" fontWeight="regular">
-            &nbsp;{" "}
-            <SuiTypography
-              component={Link}
-              to="/authentication/sign-up"
-              variant="button"
-              textColor="info"
-              fontWeight="medium"
-              textGradient
-            >
-              &nbsp;
-            </SuiTypography>
-          </SuiTypography>
         </SuiBox>
       </SuiBox>
     </CoverLayout>
